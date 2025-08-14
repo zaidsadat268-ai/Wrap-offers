@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wrap offers - أفضل أسعار الجملة للحلويات والشوكولاته</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap');
+        
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #fafafa;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .whatsapp-btn:hover {
+            background-color: #128C7E;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Navigation -->
+    <nav class="bg-amber-800 text-white py-4 px-6 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-4 space-x-reverse">
+                <i class="fas fa-candy-cane text-2xl"></i>
+                <span class="text-xl font-bold">Wrap offers</span>
+            </div>
+            <div class="hidden md:flex space-x-6 space-x-reverse">
+                <a href="#" class="hover:text-amber-200">الرئيسية</a>
+                <a href="#products" class="hover:text-amber-200">المنتجات</a>
+                <a href="#about" class="hover:text-amber-200">عنا</a>
+                <a href="tel:00962797127392" class="hover:text-amber-200">اتصل بنا</a>
+            </div>
+            <button class="md:hidden">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-white py-20 px-6">
+        <div class="container mx-auto">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Wrap offers</h1>
+                <p class="text-xl md:text-2xl mb-8">أفضل أسعار الجملة ستجدها بهذا الموقع</p>
+                <a href="#products" class="bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+                    تصفح المنتجات
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 px-6 bg-white hidden">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8 text-gray-800">عنا</h2>
+            <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+                We are a company specialized in selling food products and sweets at wholesale prices.
+                <br><br>
+                نحن شركة متخصصة في بيع المنتجات الغذائية والحلويات بأسعار الجملة.
+            </p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-16 px-6 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">منتجاتنا</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <img src="https://cdn.salla.sa/jGbEB/cf80c987-c648-48e4-bb38-ddc1625a4a31-500x500-cwvSI8JOKQWRYn657ThDhnEsVhuaMe0WidGq9muQ.jpg" 
+                         alt="Snickers" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">شوكولاته سنيكرز</h3>
+                        <p class="text-gray-600 mb-2">كود المنتج: SNK-001</p>
+                        <button onclick="openWhatsApp('شوكولاته سنيكرز')" class="w-full bg-amber-500 hover:bg-amber-600 text-white font-bold py-2 px-4 rounded transition duration-300">
+                            شراء الآن
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <img src="https://m.media-amazon.com/images/I/71VlNkm17JL.jpg" 
+                         alt="KitKat" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">شوكولاته كيت كات</h3>
+                        <p class="text-gray-600 mb-2">كود المنتج: KTK-002</p>
+                        <button onclick="openWhatsApp('شوكولاته كيت كات')" class="w-full bg-amber-500 hover:bg-amber-600 text-white font-bold py-2 px-4 rounded transition duration-300">
+                            شراء الآن
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <img src="https://jebnalak.com/cdn/shop/products/mars-chocolate-51g-110873_800x.jpg?v=1626528862" 
+                         alt="Mars" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">شوكولاته مارس</h3>
+                        <p class="text-gray-600 mb-2">كود المنتج: MRS-003</p>
+                        <button onclick="openWhatsApp('شوكولاته مارس')" class="w-full bg-amber-500 hover:bg-amber-600 text-white font-bold py-2 px-4 rounded transition duration-300">
+                            شراء الآن
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <img src="https://jebnalak.com/cdn/shop/products/mms-chocolate-45g-263463_800x.jpg?v=1626528802
+                         alt="M&M's" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">شوكولاته M&M's</h3>
+                        <p class="text-gray-600 mb-2">كود المنتج: MMS-004</p>
+                        <button onclick="openWhatsApp('شوكولاته M&M\'s')" class="w-full bg-amber-500 hover:bg-amber-600 text-white font-bold py-2 px-4 rounded transition duration-300">
+                            شراء الآن
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Product 5 -->
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <img src="https://www.galaxychocolate.com/mena/sites/g/files/fnmzdf1881/files/2022-12/Galaxy_MEANA-Chocolate_flex-1x1.jpg" 
+                         alt="Galaxy" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">شوكولاته جالاكسي</h3>
+                        <p class="text-gray-600 mb-2">كود المنتج: GLX-005</p>
+                        <button onclick="openWhatsApp('شوكولاته جالاكسي')" class="w-full bg-amber-500 hover:bg-amber-600 text-white font-bold py-2 px-4 rounded transition duration-300">
+                            شراء الآن
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Product 6 -->
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <img src=" https://cdn.quicksell.co/-MoFM5g5hxls7LYg2X9O/products/-OU-SZ7NiON12smOVODd.jpg " 
+                         alt="Assorted Candy" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">panino roll</h3>
+                        <p class="text-gray-600 mb-2">كود المنتج: ASR-006</p>
+                        <button onclick="openWhatsApp(' roll panino)" class="w-full bg-amber-500 hover:bg-amber-600 text-white font-bold py-2 px-4 rounded transition duration-300">
+                            شراء الآن
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16 px-6 bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">تواصل معنا</h2>
+            
+            <div class="max-w-2xl mx-auto bg-white rounded-lg shadow-md p-8">
+                <div class="flex flex-col md:flex-row items-center justify-center mb-8">
+                    <div class="whatsapp-btn bg-green-500 text-white p-4 rounded-full mr-0 md:mr-4 mb-4 md:mb-0 transition duration-300">
+                        <i class="fab fa-whatsapp text-2xl"></i>
+                    </div>
+                    <div class="text-center md:text-right">
+                        <h3 class="text-xl font-bold text-gray-800">تواصل عبر واتساب</h3>
+                        <p class="text-gray-600 mt-2">للطلبات والاستفسارات، يمكنك التواصل معنا مباشرة عبر الواتساب</p>
+                        <p class="text-green-600 font-bold text-lg mt-2">0797127392</p>
+                    </div>
+                </div>
+                
+                <button onclick="openWhatsApp('استفسار عام')" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 flex items-center justify-center">
+                    <i class="fab fa-whatsapp ml-2"></i> ابدأ محادثة واتساب
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 px-6">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center space-x-4 space-x-reverse">
+                        <i class="fas fa-candy-cane text-2xl text-amber-400"></i>
+                        <span class="text-xl font-bold">Wrap offers</span>
+                    </div>
+                    <p class="mt-2 text-gray-400">أفضل أسعار الجملة للحلويات والشوكولاته في الأردن</p>
+                </div>
+                
+                <div class="flex space-x-6 space-x-reverse">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-facebook-f text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="https://wa.me/962797127392" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-whatsapp text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400 text-sm">
+                <p>All rights reserved © Basheer Abu Omar & Zaid Al Yazouri.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function openWhatsApp(productName) {
+            const message = `مرحباً، أنا مهتم بشراء ${productName} من موقع Wrap offers. هل يمكنكم تقديم المزيد من المعلومات؟`;
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappUrl = `https://wa.me/962797127392?text=${encodedMessage}`;
+            window.open(whatsappUrl, '_blank');
+        }
+
+        // Show about section when navigating to it
+        document.addEventListener('DOMContentLoaded', function() {
+            const hash = window.location.hash;
+            if (hash === '#about') {
+                document.querySelector('#about').classList.remove('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
